@@ -64,8 +64,8 @@ class Player {
         // Where is the player?
         FloatRect getPosition();
 
-        // Where is the centre of the player?
-        Vector2f getCentre();
+        // Where is the center of the player?
+        Vector2f getCenter();
 
         // Which angle is the player facing?
         float getRotation();

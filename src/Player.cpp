@@ -57,7 +57,7 @@ FloatRect Player::getPosition() {
     return m_Sprite.getGlobalBounds();
 }
 
-Vector2f Player::getCentre() {
+Vector2f Player::getCenter() {
     return m_Position;
 }
 
