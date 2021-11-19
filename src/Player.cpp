@@ -19,7 +19,7 @@ void Player::spawn(IntRect arena, Vector2f resolution, int tileSize) {
     m_Position.x = arena.width / 2;
     m_Position.y = arena.height / 2;
 
-    // Copy details of the arean to the player's m_Arena
+    // Copy details of the arena to the player's m_Arena
     m_Arena.left = arena.left;
     m_Arena.width = arena.width;
     m_Arena.top = arena.top;
@@ -124,7 +124,7 @@ void Player::update(float elapsedTime, Vector2i mousePosition) {
 
     m_Sprite.setPosition(m_Position);
 
-    // Keep the player in the arean
+    // Keep the player in the arena
     if (m_Position.x > m_Arena.width - m_TileSize) {
         m_Position.x = m_Arena.width - m_TileSize;
     }
@@ -154,7 +154,7 @@ void Player::upgradeSpeed() {
 }
 
 void Player::upgradeHealth() {
-    // 20% mex health upgrade
+    // 20% max health upgrade
     m_MaxHealth += (START_HEALTH * .2);
 }
 
